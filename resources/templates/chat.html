@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Public chat</title>
+    <link rel="stylesheet" href="../static/css/chat.css">
+</head>
+
+<body>
+    <div class="chat-container" id="chat-container">
+        <h1>Public Chat</h1>
+        <h5>You can review, talk about books here.</h5>
+        <div class="chat" id="chat">
+        </div>
+        <form onsubmit="sendMessage(event)">
+            <input type="text" id="chat-message" placeholder="Enter message..." required autocomplete="off" autofocus>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+
+
+    <div class="username-container" id="username-container">
+        <form onsubmit="enterUsername(event)">
+            <input type="text" placeholder="Enter your username:" id="username-input" required>
+            <br><br>
+            <button type="submit">Join chat</button>
+        </form>
+    </div>
+
+    <script src="../static/js/chat.js"></script>
+</body>
+
+</html>

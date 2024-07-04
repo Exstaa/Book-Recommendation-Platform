@@ -1,0 +1,17 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.book span {
+    display: block;
+}
+
+.book {
+    background-color: darkgray;
+    color: white;
+    display: inline-block;
+    margin: 10px;
+    border: 1px solid black;
+    width: fit-content;
+    padding: 10px;
+}

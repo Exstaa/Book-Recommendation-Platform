@@ -1,0 +1,76 @@
+body {
+    padding-top: 100px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #2471A3;
+}
+
+.chat span {
+    display: block;
+}
+
+.chat-container {
+    width: 80%;
+    padding: 10px;
+    padding-bottom: 0px;
+    border-radius: 4px;
+    margin: auto;
+}
+
+.chat-container {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.chat-container .chat {
+    height: 50vh;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+.chat-container form {
+    margin-top: 10px;
+}
+
+.chat-container form input {
+    border: none;
+    padding: 5px;
+    width: 88%;
+}
+
+.chat-container form button {
+    background-color: #58D68D;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    width: 10%;
+    transition: 0.2s;
+}
+
+.username-container {
+    text-align: center;
+}
+
+.username-container form button {
+    background-color: #58D68D;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 5px;
+    width: 5%;
+    transition: 0.2s;
+}
+
+
+.username-container form input {
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+}
+
+.username-container form button:hover {
+    background-color: #439f69;
+}
+
+.chat-container form button:hover {
+    background-color: #439f69;
+}
