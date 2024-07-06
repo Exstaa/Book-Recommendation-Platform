@@ -9,12 +9,32 @@
 </head>
 
 <body>
+    <nav class="navbar">
+        <div class="brand-title"></div>
+        <a href="javascript:void(0);" class="toggle-button" onclick="toggleMenu()">
+            ☰
+        </a>
+        <div class="navbar-links" id="navbarLinks">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Chat</a></li>
+                <li><a href="#">Reviews</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav><br><br>
     <form onsubmit="recommendBook(event)">
-        <input type="text" id="bookname">
+        <input type="text" id="bookname" placeholder="Enter a book name that you love.">
+        <br><br>
         <button type="submit">Recommend</button>
-    </form><br><br>
-    <div class="books" id="books">
+    </form>
+    <br><br>
+    <div class="recommended-books-container">
+        <h1>Books: </h1>
+        <div class="books" id="books">
 
+        </div>
     </div>
     <script src="../static/js/main.js"></script>
 </body>
