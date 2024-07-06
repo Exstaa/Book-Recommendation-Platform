@@ -1,17 +1,124 @@
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #2471A3;
+    padding: 0;
+    margin: 0;
 }
-
+form input{
+    border-radius: 4px;
+    border: none;
+    padding: 10px;
+    width: 25%;
+}
+form button{
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #58D68D;
+    transition: 0.3s;
+    color: white;
+}
+form button:hover{
+    background-color: #439f69;
+}
+form{
+    text-align: center;
+}
+.recommended-books-container{
+    text-align: center;
+}
+.recommended-books-container h1{
+    color: white;
+    text-shadow: 1px 1px 5px black;
+}
 .book span {
     display: block;
 }
 
 .book {
-    background-color: darkgray;
+    background-color: #245BA3;
     color: white;
     display: inline-block;
     margin: 10px;
-    border: 1px solid black;
+    border: 1px solid white;
+    border-radius: 4px;
+    box-shadow: 1px 1px 5px black;
     width: fit-content;
     padding: 10px;
+    transition: 0.2s;
+}
+.book:hover{
+    background-color: #2f70c4;
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(59, 177, 255, 0.2); /* Semi-transparent background */
+    backdrop-filter: blur(10px); /* Blurred background */
+    padding: 1rem;
+    color: white;
+    text-shadow: 1px 1px 2px black; /* Black text shadow */
+}
+
+.brand-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar-links ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+.navbar-links li {
+    padding: 0 1rem;
+}
+
+.navbar-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    text-shadow: 1px 1px 2px black; /* Black text shadow */
+    transition: text-shadow 0.3s ease; /* Smooth transition for text shadow */
+}
+
+.navbar-links a:hover {
+    text-shadow: 1px 1px 2px white; /* White text shadow on hover */
+}
+
+.toggle-button {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+    
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+    
+    .navbar-links li {
+        text-align: center;
+        padding: 1rem 0;
+    }
+    
+    .navbar-links.active {
+        display: flex;
+    }
+    
+    .toggle-button {
+        display: block;
+    }
 }
