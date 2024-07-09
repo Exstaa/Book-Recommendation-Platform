@@ -52,6 +52,11 @@ form{
 
 }
 
+.book a{
+    color: gold;
+    text-decoration: none;
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
