@@ -28,6 +28,7 @@ function showBooks(books) {
           <span id="title">Title: ${books[i].title}</span>
           <span id="author">Author: ${books[i].author}</span>
           <span id="rating">Rating: ${books[i].rating}</span>
+          <a href=" https://www.bing.com/search?pglt=43&q=${books[i].title}" target="_blank">About book </a>
        </div>
           `
             booksItem.innerHTML += html;
