@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reviews</title>
+
     <link rel="stylesheet" href="../static/css/review-page.css">
+ 
 </head>
 <body>
     <nav class="navbar">
@@ -22,6 +24,31 @@
             </ul>
         </div>
     </nav><br><br>
+ 
+    <button id="openModalBtn">Open Modal</button>
+
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <form id="modalForm" onsubmit="addReview(event)">
+          <label for="name">Name:</label>
+          <input type="text" placeholder="Your name:" id="name" name="name" required><br><br>
+          <label for="book-name">Book Name:</label>
+          <input type="text" id="book-name" name="book-name" placeholder="Book name:" required><br><br>
+          <label for="review">Review:</label>
+          <textarea name="review" id="review" cols="30" rows="10" placeholder="Review:"></textarea><br><br>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+    </div>
+
+    <section class="reviews" id="reviews">
+        <h1>Reviews</h1>
+        <div class="reviews-container" id="reviews-container">
+            
+        </div>
+    </section>
+
     <script src="../static/js/review-page.js"></script>
 </body>
 </html>
