@@ -159,3 +159,38 @@ body {
     background-color: #2f70c4;
 
 }
+#modalForm{
+    text-align: center;
+}
+#modalForm label{
+    display: block;
+}
+
+#modalForm input{
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0px 0px 2px black;
+}
+#modalForm textarea{
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0px 0px 2px black;
+}
+
+#add-review-btn{
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    color: white;
+    background-color: rgb(0, 159, 24);
+    margin: 10px;
+}
+
+#submitbtn{
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    color: white;
+    background-color: rgb(0, 159, 24);
+    margin: 10px;
+}
